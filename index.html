@@ -34,9 +34,9 @@
       color: #ecf0f1;
       padding: 1rem 0;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      display: flex; /* Use flexbox for header layout */
-      align-items: center; /* Center items vertically */
-      justify-content: space-between; /* Space between logo and nav */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Vertically center items */
+      justify-content: space-between; /* Space logo and nav */
     }
     .container {
       width: 90%;
@@ -50,13 +50,12 @@
       text-decoration: none;
     }
     nav {
-      display: flex; /* Ensure nav items are on one line */
-      /* Remove justify-content as we're setting this on the ul */
+      display: flex; /* Ensure nav is flex */
     }
     nav ul {
       list-style-type: none;
       display: flex;
-      justify-content: flex-end; /* Align items to the right */
+      /* No need for justify-content here since nav itself is aligned via header's justify-content */
     }
     nav ul li {
       margin-left: 20px;
