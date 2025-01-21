@@ -34,6 +34,9 @@
       color: #ecf0f1;
       padding: 1rem 0;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex; /* Use flexbox for header layout */
+      align-items: center; /* Center items vertically */
+      justify-content: space-between; /* Space between logo and nav */
     }
     .container {
       width: 90%;
@@ -47,13 +50,13 @@
       text-decoration: none;
     }
     nav {
-      display: flex; /* Ensures nav items are on one line by default */
-      align-items: center; /* Align items vertically in the center */
+      display: flex; /* Ensure nav items are on one line */
+      /* Remove justify-content as we're setting this on the ul */
     }
     nav ul {
       list-style-type: none;
-      display: flex; /* Display items in one line */
-      justify-content: flex-end;
+      display: flex;
+      justify-content: flex-end; /* Align items to the right */
     }
     nav ul li {
       margin-left: 20px;
@@ -131,10 +134,8 @@
     
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      /* Keep items on one line for smaller screens */
       nav ul {
-        flex-direction: row; /* Change back to row for one line */
-        /* Remove align-items: center as it's already set for nav */
+        flex-direction: row; /* Keep items on one line for smaller screens */
       }
       nav ul li {
         margin-left: 10px; /* Reduce margin for better fit on smaller screens */
