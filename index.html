@@ -17,11 +17,14 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       
       /* Layering backgrounds: gradient over pattern */
       background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.8), rgba(195, 207, 226, 0.8)), 
                         url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAeSURBVBhXY/z//z8DABiGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYAAAByA8RPBhA4AAAAAElFTkSuQmCC');
-      background-size: 200% 200%, 50px 50px; /* Size of gradient and pattern */
+      background-size: 200% 200%, 50px 50px;
       background-position: 0% 50%, 0 0;
       background-repeat: no-repeat, repeat;
       animation: backgroundAnimation 20s ease infinite;
@@ -77,8 +80,9 @@
     }
     .stream-container {
       margin: 0 auto;
-      max-width: 800px;
-      padding: 0 2rem;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 1rem;
     }
     .video-wrapper {
       display: flex;
@@ -147,6 +151,9 @@
         left: -5px;
         right: -5px;
         bottom: -5px;
+      }
+      .container {
+        width: 95%;
       }
     }
   </style>
