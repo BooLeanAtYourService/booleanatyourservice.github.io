@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
   <title>אתה.com</title>
   <style>
-    /* Inline CSS for responsiveness */
     body {
       margin: 0;
       padding: 0;
@@ -15,6 +14,9 @@
     header {
       background-color: #f8f9fa;
       padding: 10px 0;
+      display: flex; /* Use flexbox for single-line layout */
+      justify-content: space-between; /* Space between logo and list */
+      align-items: center; /* Center items vertically */
     }
     .logo {
       font-size: 2em;
@@ -23,9 +25,11 @@
     ul {
       list-style: none;
       padding: 0;
+      margin: 0; /* Remove default margin */
+      display: flex; /* List items in a row */
     }
     ul li {
-      display: inline-block;
+      margin-left: 10px; /* Space between list items */
     }
     ul li a {
       text-decoration: none;
@@ -54,20 +58,12 @@
       text-align: center;
       padding: 10px 0;
     }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      ul li {
-        display: block;
-        text-align: center;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
     <a href="#" class="logo">❤️</a>
-    <ul class="text-center">
+    <ul>
       <li><a href="#">Home</a></li>
       <li><a href="search.html">Search</a></li>
       <li><a href="videos.html">Videos</a></li>
