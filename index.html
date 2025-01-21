@@ -20,7 +20,7 @@
       
       /* Layering backgrounds: gradient over pattern */
       background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.8), rgba(195, 207, 226, 0.8)), 
-                        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAeSURBVBhXY/z//z8DABiGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYAAAByA8RPBhA4AAAAAElFTkSuQmCC'); /* Example of a very small pattern */
+                        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAeSURBVBhXY/z//z8DABiGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYAAAByA8RPBhA4AAAAAElFTkSuQmCC');
       background-size: 200% 200%, 50px 50px; /* Size of gradient and pattern */
       background-position: 0% 50%, 0 0;
       background-repeat: no-repeat, repeat;
@@ -32,8 +32,6 @@
       50% { background-position: 100% 50%, 0 0; }
       100% { background-position: 0% 50%, 0 0; }
     }
-    
-    /* Rest of the styles remain the same */
     
     /* Header styles */
     header {
@@ -154,6 +152,35 @@
   </style>
 </head>
 <body>
-  <!-- Your body content here -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">אתה.com</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="stream-container">
+        <div class="video-wrapper">
+          <div class="video-frame">
+            <div class="stream-player">
+              <iframe src="https://www.youtube.com/embed/03Yjw5clqmw?autoplay=1&mute=1&controls=1" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2024 אתה.com | All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
